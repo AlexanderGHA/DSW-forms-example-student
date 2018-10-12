@@ -13,7 +13,7 @@ def render_response():
     #args is the MultiDict (like a dictonary but you have multiple values for thr same key)
     #The infornation is arg is visible in the url for the page being requested. exe .../response?color=orange
     
-    if color == "pink":
+    if color.lower() == "pink":
         reply = "That's my favorite color, too!"
     else:
         reply = "My favorite color is pink."
